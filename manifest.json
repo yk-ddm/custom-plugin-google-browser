@@ -8,5 +8,8 @@
         "16": "images/yk-ddm-16.png",
         "48": "images/yk-ddm-48.png",
         "128": "images/yk-ddm-16.png"
+    },
+    "browser_action": {
+        "default_icon": "images/yk-ddm-48.png"
     }
 }

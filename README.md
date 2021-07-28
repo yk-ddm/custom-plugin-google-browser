@@ -18,4 +18,7 @@
 
 - icons 插件图标, 即 `icons: {...}`, 放置不同像素的图标icon, 常用 16、48和128像素的图标icon
 
+- browser_action 浏览行为, 即 "browser_action: {...}
+
+    - 默认图标default_icon: ""
 ## 总结
