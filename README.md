@@ -25,4 +25,9 @@
     - 默认标题default_title: ""
 
     - 默认popup页面 default_popup: ""
+
+- 后台background参数, 即 "background: {...}"
+    - 默认后台页面page: "background.html"
+
+
 ## 总结

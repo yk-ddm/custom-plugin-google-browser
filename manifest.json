@@ -13,5 +13,8 @@
         "default_icon": "images/yk-ddm-48.png",
         "default_title": "自定义谷歌浏览器插件 --- yk-ddm",
         "default_popup": "default_popup.html"
+    },
+    "background": {
+        "page": "background.html"
     }
 }
