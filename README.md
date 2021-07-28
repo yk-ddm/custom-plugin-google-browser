@@ -21,4 +21,6 @@
 - browser_action 浏览行为, 即 "browser_action: {...}
 
     - 默认图标default_icon: ""
+
+    - 默认标题default_title: ""
 ## 总结
