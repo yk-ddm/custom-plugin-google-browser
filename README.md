@@ -17,3 +17,5 @@
 - author 作者, 即 `author: yk-ddm`
 
 - icons 插件图标, 即 `icons: {...}`, 放置不同像素的图标icon, 常用 16、48和128像素的图标icon
+
+## 总结
