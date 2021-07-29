@@ -29,5 +29,7 @@
 - 后台background参数, 即 "background: {...}"
     - 默认后台页面page: "background.html"
 
-
+- permissions 权限参数，即 permissions: [...]
+    - 标签页参数tabs
+    - 跨域参数：*://*/*
 ## 总结
