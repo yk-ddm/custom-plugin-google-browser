@@ -5,6 +5,6 @@ oA.onclick = function () {
     //window.open( chrome.extension.getURL("background.html") )
 
     // 调用后台js
-    var background = chrome.extension.getBackgroundPage()
-    background.getTabTitle()
+    var a = chrome.extension.getBackgroundPage()
+    a.getTabTitle()
 }
