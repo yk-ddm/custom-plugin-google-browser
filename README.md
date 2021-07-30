@@ -32,4 +32,9 @@
 - permissions 权限参数，即 permissions: [...]
     - 标签页参数tabs
     - 跨域参数：http://\*/\*
+
+- content_scripts 向当前tab页注入脚本代码, 即 "content_scripts": [{...}]
+    - matches 浏览器地址栏匹配模式: "matches": ["<all_urls>"],
+    - js 需要注入的js 文件路径: "js": ["js/demo.js" ...] 
+    - 执行此脚本的时机："run_at": "document_start" 文档加载完成执行
 ## 总结
