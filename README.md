@@ -31,5 +31,5 @@
 
 - permissions 权限参数，即 permissions: [...]
     - 标签页参数tabs
-    - 跨域参数：*://*/*
+    - 跨域参数：http://\*/\*
 ## 总结
