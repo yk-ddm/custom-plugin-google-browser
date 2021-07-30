@@ -21,3 +21,15 @@ function searchAutoByBaidu() {
         // 'submitBtn.click()'  // 有没有此段代码，皆可以运行
     })
 }
+
+// 实现鼠标右键菜单功能
+function contentMenus() {
+    // 创建鼠标右键菜单
+    chrome.contextMenus.create({
+        // 标题 title
+        title: "右键菜单标题",
+        onclick: function () {
+            searchAutoByBaidu()
+        }
+    })
+}

@@ -21,7 +21,8 @@
         "tabs",
         "*://*/*",
         "http://*/*",
-        "https://*/*"
+        "https://*/*",
+        "contextMenus"
     ],
     "content_scripts": [
         {

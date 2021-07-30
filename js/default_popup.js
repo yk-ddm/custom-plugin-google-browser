@@ -7,7 +7,11 @@ oA.onclick = function () {
     // 调用后台js
     var background = chrome.extension.getBackgroundPage()
     // 显示当前tab 页的标题
-    //background.getTabTitle()
+    // background.getTabTitle()
 
-    background.searchAutoByBaidu()
+    // 实现百度自动搜索
+    // background.searchAutoByBaidu()
+
+    // 实现鼠标右键菜单
+    background.contentMenus()
 }
