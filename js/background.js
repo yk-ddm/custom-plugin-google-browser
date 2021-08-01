@@ -23,13 +23,18 @@ function searchAutoByBaidu() {
 }
 
 // 实现鼠标右键菜单功能
+var isCreateContentMenus
 function contentMenus() {
     // 创建鼠标右键菜单
-    chrome.contextMenus.create({
-        // 标题 title
-        title: "右键菜单标题",
-        onclick: function () {
-            searchAutoByBaidu()
-        }
-    })
+    if ( !isCreateContentMenus ) {
+        chrome.contextMenus.create({
+            // 标题 title
+            title: "右键菜单标题",
+            onclick: function () {
+                searchAutoByBaidu()
+            }
+        })
+
+        isCreateContentMenus = true
+    }
 }
