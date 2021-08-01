@@ -36,6 +36,11 @@ function contentMenus() {
             // 指定在哪些tab页显示创建的菜单
             documentUrlPatterns: [
                 "https://www.baidu.com/"
+            ],
+            // 指定在 某种状态下显示菜单
+            contexts: [
+                // 可编辑的状态
+                "editable"
             ]
         })
 
