@@ -32,7 +32,11 @@ function contentMenus() {
             title: "右键菜单标题",
             onclick: function () {
                 searchAutoByBaidu()
-            }
+            },
+            // 指定在哪些tab页显示创建的菜单
+            documentUrlPatterns: [
+                "https://www.baidu.com/"
+            ]
         })
 
         isCreateContentMenus = true
