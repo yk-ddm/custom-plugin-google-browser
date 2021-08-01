@@ -43,7 +43,9 @@ function contentMenus() {
                 "editable",
                 // 选中状态下显示
                 "selection"
-            ]
+            ],
+            // type 默认值是 normal
+            type: "radio"
         })
 
         isCreateContentMenus = true
