@@ -39,8 +39,10 @@ function contentMenus() {
             ],
             // 指定在 某种状态下显示菜单
             contexts: [
-                // 可编辑的状态
-                "editable"
+                // 可编辑的状态显示
+                "editable",
+                // 选中状态下显示
+                "selection"
             ]
         })
 
