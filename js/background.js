@@ -44,8 +44,62 @@ function contentMenus() {
                 // 选中状态下显示
                 "selection"
             ],
-            // type 默认值是 normal
-            type: "radio"
+            // id 的定义，值必须为字符串
+            id: "1"
+        })
+
+        chrome.contextMenus.create({
+            // 标题 title
+            title: "子菜单one",
+            onclick: function () {
+                searchAutoByBaidu()
+            },
+            // 指定在哪些tab页显示创建的菜单
+            documentUrlPatterns: [
+                "https://www.baidu.com/"
+            ],
+            // 指定在 某种状态下显示菜单
+            contexts: [
+                // 可编辑的状态显示
+                "editable",
+                // 选中状态下显示
+                "selection"
+            ],
+            /**
+             *  type 默认值是 normal 
+             *      radio ---> 单选框
+             *      checkbox ---> 复选框
+             */
+            type: "radio",
+            // parentId 的定义，值必须为字符串
+            parentId: "1"
+        })
+
+        chrome.contextMenus.create({
+            // 标题 title
+            title: "子菜单two",
+            onclick: function () {
+                searchAutoByBaidu()
+            },
+            // 指定在哪些tab页显示创建的菜单
+            documentUrlPatterns: [
+                "https://www.baidu.com/"
+            ],
+            // 指定在 某种状态下显示菜单
+            contexts: [
+                // 可编辑的状态显示
+                "editable",
+                // 选中状态下显示
+                "selection"
+            ],
+            /**
+             *  type 默认值是 normal 
+             *      radio ---> 单选框
+             *      checkbox ---> 复选框
+             */
+            type: "radio",
+            // parentId 的定义，值必须为字符串
+            parentId: "1"
         })
 
         isCreateContentMenus = true
