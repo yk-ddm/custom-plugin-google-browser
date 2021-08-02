@@ -30,5 +30,8 @@
             "js": ["js/baidu_test.js"],
             "run_at": "document_start"
         }
-    ]
+    ],
+    "chrome_url_overrides": {
+        "newtab": "newTab.html"
+    }
 }

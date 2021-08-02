@@ -38,4 +38,9 @@
     - matches 浏览器地址栏匹配模式: "matches": ["<all_urls>"],
     - js 需要注入的js 文件路径: "js": ["js/demo.js" ...] 
     - 执行此脚本的时机："run_at": "document_start" 文档加载完成执行
+
+- chrome_url_overrides 配置打开newTab标签页时默认显示什么样的界面
+    - chrome_url_overrides: {
+        "newtab": "newTab.html"
+    }
 ## 总结
