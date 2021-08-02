@@ -105,3 +105,23 @@ function contentMenus() {
         isCreateContentMenus = true
     }
 }
+
+// 显示 应用图标icon
+var isShowIcon
+function showOrHiddenIcon() {
+    if ( !isShowIcon ) {
+        /**
+         *  设置图标Badge相关信息
+         *      setBadgeText ---> 设置图标文本
+         *      setBadgeBackgroundColor ---> 设置图标背景颜色
+         *      
+         */
+        chrome.browserAction.setBadgeText( { text: 'yk' } )
+        chrome.browserAction.setBadgeBackgroundColor( { color: [0, 0, 255, 255] } )
+        isShowIcon = true
+    } else {
+        chrome.browserAction.setBadgeText( { text: '' } )
+        chrome.browserAction.setBadgeBackgroundColor( { color: [0, 0, 0, 0] } )
+        isShowIcon = false
+    }
+}

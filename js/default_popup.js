@@ -13,5 +13,8 @@ oA.onclick = function () {
     // background.searchAutoByBaidu()
 
     // 实现鼠标右键菜单
-    background.contentMenus()
+    // background.contentMenus()
+
+    // 显示 应用图标icon
+    background.showOrHiddenIcon()
 }
