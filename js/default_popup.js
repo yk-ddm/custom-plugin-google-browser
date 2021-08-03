@@ -25,6 +25,9 @@ oA.onclick = function () {
     // background.searchByKeyword()
 
     // 发布桌面通知
-    background.sendDeskTopNotification()
+    // background.sendDeskTopNotification()
 
+    // 修改当前标签页的页面样式
+    background.updateCurrentTabStyle( "document.body.style.backgroundColor = 'skyblue';" +
+    "document.body.style.fontSize = '36px';" )
 }

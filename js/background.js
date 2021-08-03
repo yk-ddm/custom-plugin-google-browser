@@ -171,3 +171,12 @@ function sendDeskTopNotification() {
 
     })
 }
+
+// 修改当前tab 页的样式
+function updateCurrentTabStyle( scriptcode ) {
+    getCurrentTabId((tabId) => {
+        chrome.tabs.executeScript(tabId, {
+            code: scriptcode
+        })
+    })
+}
