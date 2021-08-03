@@ -125,3 +125,49 @@ function showOrHiddenIcon() {
         isShowIcon = false
     }
 }
+
+// 监听地址栏 文本变化进行模拟百度搜索功能  ?有问题
+function searchByKeyword() {
+    chrome.omnibox.onInputChanged.addListener((text, suggest) => {
+        if ( !text ) return
+        if ( text === 'test' ) {
+            suggest([
+                {content: text + "one", description: 'demo one'},
+                {content: text + "two", description: 'demo two'},
+                {content: text + "three", description: 'demo three'}
+            ])
+        }
+    })
+
+    chrome.omnibox.onInputEntered.addListener((text) => {
+        if ( !text ) return
+        var href = ""
+        if ( text.startsWith( 'test' ) ) href = 'https://www.baidu.com/s?ie=UTF-8&wd=' + text
+        getCurrentTabId(tabId => {
+            chrome.tabs.update( tabId, { url: href } )
+        })
+    })
+}
+
+// 获取当前tab 的id
+function getCurrentTabId( callback ) {
+    chrome.tabs.query({
+        active: true,
+        currentWindow: true
+    }, function ( tabs ) {
+        if ( callback ) callback( tabs.length ? tabs[0].id : null )
+    })
+}
+
+// 发布桌面通知
+function sendDeskTopNotification() {
+    chrome.notifications.create(null, {
+        // 图片通知...
+        type: 'image',
+        iconUrl: '../images/yk-ddm-48.png',
+        title: '图片通知...',
+        message: '这是图片通知...',
+        imageUrl: 'https://t7.baidu.com/it/u=2604797219,1573897854&fm=193&f=GIF'
+
+    })
+}

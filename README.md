@@ -43,4 +43,9 @@
     - chrome_url_overrides: {
         "newtab": "newTab.html"
     }
+
+- omnibox 配置tab 页的地址栏信息：关键字keyword
+    - omnibox: {
+        "keyword": "text"
+    }
 ## 总结

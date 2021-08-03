@@ -22,7 +22,8 @@
         "*://*/*",
         "http://*/*",
         "https://*/*",
-        "contextMenus"
+        "contextMenus",
+        "notifications"
     ],
     "content_scripts": [
         {
@@ -33,5 +34,8 @@
     ],
     "chrome_url_overrides": {
         "newtab": "newTab.html"
+    },
+    "omnibox": {
+        "keyword": "address"
     }
 }
