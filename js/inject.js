@@ -2,7 +2,7 @@
  * @Author: yk 
  * @Date: 2021-08-04 17:40:23 
  * @Last Modified by: yk
- * @Last Modified time: 2021-08-04 23:07:17
+ * @Last Modified time: 2021-08-04 23:19:09
  */
 
 /**
@@ -46,4 +46,23 @@ function demoThree()
     document.getElementById('su').setAttribute('onclick', 'alert(document.getElementById("kw").value)')
 }
 
-demoThree()
+// demoThree()
+
+/**
+ * @description 自动滚动滚动条到一定位置
+ * 
+ */
+function demoFour()
+{
+    const doc = document.documentElement
+    var timer = setInterval(() =>
+    {
+        if (doc.scrollTop >= 500)
+        {
+            clearInterval(timer)
+        }
+        doc.scrollTop += 2
+    }, 50)
+}
+
+demoFour()
