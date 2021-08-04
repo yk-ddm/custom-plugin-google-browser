@@ -2,7 +2,7 @@
  * @Author: yk 
  * @Date: 2021-08-04 17:40:23 
  * @Last Modified by: yk
- * @Last Modified time: 2021-08-04 22:49:47
+ * @Last Modified time: 2021-08-04 23:07:17
  */
 
 /**
@@ -37,4 +37,13 @@ function demoTwo()
     console.log(document.getElementById('su').value)
 }
 
-demoTwo()
+// demoTwo()
+
+function demoThree()
+{
+    document.getElementById('su').value = 'demoThree'
+    document.getElementById('su').setAttribute('type', 'button')
+    document.getElementById('su').setAttribute('onclick', 'alert(document.getElementById("kw").value)')
+}
+
+demoThree()
