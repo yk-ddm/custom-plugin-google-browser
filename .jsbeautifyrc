@@ -1,0 +1,27 @@
+{
+    // 样式：[{之间通过换行展开，内联样式
+    "brace_style": "expand,preserve-inline",
+
+    // 首行缩进大小
+    "indent_size": 4,
+
+    // 缩进字符
+    "indent_char": " ",
+
+    "jslint_happy": true,
+
+    "unformatted": [""],
+
+    "css": {
+        "indent_size": 4
+    },
+
+    "html": {
+        "wrap_attributes": "force"
+    },
+
+    "wxml": {
+        "wrap_attributes": "force"
+    }
+
+}

@@ -4,17 +4,19 @@
     "version": "1.0",
     "description": "yk-ddm custom plugin",
     "author": "yk-ddm",
-    "icons": {
+    "icons":
+    {
         "16": "images/yk-ddm-16.png",
         "48": "images/yk-ddm-48.png",
         "128": "images/yk-ddm-16.png"
     },
-    "browser_action": {
-        "default_icon": "images/yk-ddm-48.png",
-        "default_title": "自定义谷歌浏览器插件 --- yk-ddm",
-        "default_popup": "default_popup.html"
-    },
-    "background": {
+    // "browser_action": {
+    //     "default_icon": "images/yk-ddm-48.png",
+    //     "default_title": "自定义谷歌浏览器插件 --- yk-ddm",
+    //     "default_popup": "default_popup.html"
+    // },
+    "background":
+    {
         "page": "background.html"
     },
     "permissions": [
@@ -23,19 +25,29 @@
         "http://*/*",
         "https://*/*",
         "contextMenus",
-        "notifications"
+        "notifications",
+        "declarativeContent"
     ],
     "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["js/baidu_test.js"],
-            "run_at": "document_start"
-        }
-    ],
-    "chrome_url_overrides": {
-        "newtab": "newTab.html"
-    },
-    "omnibox": {
+    {
+        "matches": ["<all_urls>"],
+        "js": ["js/baidu_test.js"],
+        "run_at": "document_start"
+    }],
+    // "chrome_url_overrides": {
+    //     "newtab": "newTab.html"
+    // },
+    "omnibox":
+    {
         "keyword": "address"
-    }
+    },
+    "page_action":
+    {
+        "default_icon": "images/yk-ddm-48.png",
+        "default_title": "自定义谷歌浏览器插件 --- yk-ddm",
+        "default_popup": "default_popup.html"
+    },
+    "web_accessible_resources": [
+        "js/inject.js"
+    ]
 }
